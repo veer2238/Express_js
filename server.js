@@ -16,7 +16,7 @@ server.use(bodyParser.json())
 
 
 server.post('/',async(req,res)=>{
-  res.send("send")
+ 
   // res.json(req,body)
 
   // let testAccount = await nodemailer.createTestAccount();
