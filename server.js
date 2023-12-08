@@ -3,7 +3,13 @@ const app = express()
 
 
 app.get('/', (req, res) => {
-res.send('Hello World!')
+
+  try {
+    res.send('Hello World!')
+  } catch (error) {
+    res.status("ok")
+  }
+
 })
 
 app.listen(3000, () => {
